@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+    <Script>
+        function tambah(){
+            var bil1 = document.Kalkulator.bil1.value;
+            var bil2 = document.Kalkulator.bil2.value;
+            var hsl = Number(bil1)+Number(bil2);
+            document.Kalkulator.Hasil.value=hsl;
+        }
+        function kurang(){
+            var bil1 = document.Kalkulator.bil1.value;
+            var bil2 = document.Kalkulator.bil2.value;
+            var hsl = Number(bil1)-Number(bil2);
+            document.Kalkulator.Hasil.value=hsl;
+        }
+        function kali(){
+            var bil1 = document.Kalkulator.bil1.value;
+            var bil2 = document.Kalkulator.bil2.value;
+            var hsl = Number(bil1)*Number(bil2);
+            document.Kalkulator.Hasil.value=hsl;
+        }
+        function bagi(){
+            var bil1 = document.Kalkulator.bil1.value;
+            var bil2 = document.Kalkulator.bil2.value;
+            var hsl = Number(bil1)/Number(bil2);
+            document.Kalkulator.Hasil.value=hsl;
+        }
+    </Script>
+<body>
+    <form name="Kalkulator">
+        <label >Bil 1 </label>
+        <input type="number" name="bil1" ><br><br>
+        <label >Bil 2 </label>
+        <input type="number" name="bil2"><br><br>
+        <label >Hasil </label>
+        <input type="number" name="Hasil"><br><br>
+        <!--button-->
+        <input type="button" name="tombol" value="+" onclick="tambah()">
+        <input type="button" name="tombol" value="-" onclick="kurang()">
+        <input type="button" name="tombol" value="*" onclick="kali()">
+        <input type="button" name="tombol" value="/" onclick="bagi()">
+        <br>
+    </form>
+</body>
+</html>
